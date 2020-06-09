@@ -110,16 +110,13 @@ def doHellJacks(amount):
         time.sleep(delay2)
         doHellJacks(jacks2)
 
-print("Click on roblox. You have 5 Seconds.")
-time.sleep(1)
-print("Click on roblox. You have 4 Seconds.")
-time.sleep(1)
-print("Click on roblox. You have 3 Seconds.")
-time.sleep(1)
-print("Click on roblox. You have 2 Seconds.")
-time.sleep(1)
-print("Click on roblox. You have 1 Seconds.")
-time.sleep(1)
+
+for remaining in range(5, 0, -1):
+    print("Click on roblox. You have {} Seconds.".format(str(remaining)))
+    time.sleep(1)
+   
+#Wow dude you suck at this
+
 doHellJacks(jacks2)
 print("Done!")
 sendKey.SendKeys('/')
